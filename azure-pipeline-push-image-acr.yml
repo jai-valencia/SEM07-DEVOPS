@@ -6,7 +6,7 @@ trigger:
 variables:
   # Variables de entorno
   ACR_NAME: 'CRDEVOPS12SM08' # Colocar el nombre de tu ACR
-  IMAGE_NAME: 'myapp-nginx-s6' # Colocar el Nombre de Imagen
+  IMAGE_NAME: 'myapp-nginx-s4' # Colocar el Nombre de Imagen
   SERVICE_CONNECTION_NAME: 'myapps-devops-sem07' # Colocar nombre del Service Connection ubicado en Docker Registry-- Azure Container Registry
 
 jobs:
@@ -23,3 +23,4 @@ jobs:
           tags: |
             latest
         displayName: 'Build and Push Docker Image'
+
