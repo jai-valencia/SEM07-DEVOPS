@@ -16,7 +16,7 @@ stages:
       - deployment: DeployToVM
         displayName: 'Deploy to VM'
         environment:
-          name: 'VM-SEM6'  # Nombre del entorno configurado en Azure DevOps
+          name: 'vm-devops-sem7'  # Nombre del entorno configurado en Azure DevOps
           resourceType: VirtualMachine  # Especifica que se conecta a una máquina virtual
         strategy:
           runOnce:
@@ -85,4 +85,5 @@ stages:
                 - script: |
                     # Mostrar la URL para acceder a Nginx
                     echo "La URL para acceder a Nginx es: http://${VM_IP_PUBLICA}/"
+
                   displayName: 'Mostrar URL de la máquina virtual'
